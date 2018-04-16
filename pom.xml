@@ -32,7 +32,7 @@
             <groupId>com.pingcap.tispark</groupId>
             <artifactId>tispark-core</artifactId>
             <version>${tispark.version}</version>
-            <!--<scope>provided</scope>-->
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -148,8 +148,8 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>commons-cli</pattern>
-                                    <shadedPattern>pingcap-cli</shadedPattern>
+                                    <pattern>org.apache.commons.cli</pattern>
+                                    <shadedPattern>com.pingcap.cli</shadedPattern>
                                 </relocation>
                             </relocations>
                             <createSourcesJar>true</createSourcesJar>
